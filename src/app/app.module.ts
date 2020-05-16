@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { fakeBackendProvider } from './interceptor/fake-backend.interceptor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,7 @@ import { SharedModule } from './shared/shared.module';
     CoreModule,
     SharedModule
   ],
-  providers: [],
+  providers: [fakeBackendProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -11,7 +11,7 @@ import { SelectionModel } from '@angular/cdk/collections';
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent implements OnInit, AfterViewInit {
-  displayedColumns = ['project', 'subproject', 'capacityUtilization','releaseSprint','velocity','defectLekage','sprintBurndownReport','workItemAge'];
+  displayedColumns = ['client','project', 'subproject', 'sprintId','capacityUtilization','releaseSprint','velocity','defectLekage','sprintBurndownReport','workItemAge'];
   dataSource: MatTableDataSource<ProjectData>;
 
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;

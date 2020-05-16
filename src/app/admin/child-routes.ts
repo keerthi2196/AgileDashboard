@@ -18,21 +18,9 @@ export const childRoutes = [
     data: { icon: 'table_chart', text: 'Projects' }
   },
   {
-    path: 'tables',
+    path: 'userProfile',
     loadChildren: () =>
-      import('./tables/tables.module').then(m => m.TablesModule),
+      import('./userprofile/userprofile.module').then(m => m.UserprofileModule),
     data: { icon: 'person', text: 'User profile' }
-  },
-  {
-    path: 'tables',
-    loadChildren: () =>
-      import('./tables/tables.module').then(m => m.TablesModule),
-    data: { icon: 'settings', text: 'Settings' }
-  },
-  {
-    path: 'tables',
-    loadChildren: () =>
-      import('./tables/tables.module').then(m => m.TablesModule),
-    data: { icon: 'exit_to_app', text: 'Logout' }
   }
 ];

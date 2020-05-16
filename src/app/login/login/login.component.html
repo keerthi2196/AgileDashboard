@@ -7,10 +7,10 @@
       <div fxLayout="row">
         <div fxFlexFill>
           <mat-form-field class="w-100">
-            <input matInput placeholder="Email">
+            <input matInput placeholder="Email" name='userEmail' [(ngModel)]='userModel.userEmail'>
           </mat-form-field>
           <mat-form-field class="w-100">
-            <input matInput type="password" placeholder="Password">
+            <input matInput type="password" placeholder="Password" name='userPassword' [(ngModel)]='userModel.password'>
           </mat-form-field>
         </div>
       </div>
