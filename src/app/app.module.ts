@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { fakeBackendProvider } from './interceptor/fake-backend.interceptor';
+import { GraphQLModule } from './graphql.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { fakeBackendProvider } from './interceptor/fake-backend.interceptor';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    GraphQLModule,
     HttpClientModule,
     CoreModule,
     SharedModule

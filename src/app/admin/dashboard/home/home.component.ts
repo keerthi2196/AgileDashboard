@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApplicationService } from 'src/app/services/application.service';
 
 interface Place {
   imgSrc: string;
@@ -15,7 +16,10 @@ interface Place {
 })
 export class HomeComponent implements OnInit {
   places: Array<Place> = [];
-  constructor() {}
+  constructor(public applicationService: ApplicationService) {}
   ngOnInit() {
+  }
+  getClients():string[]{
+    return this.applicationService.getClients();
   }
 }
